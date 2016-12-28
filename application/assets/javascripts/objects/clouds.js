@@ -8,7 +8,7 @@ Cloud = function(){
 
   // create a material; a simple white material will do the trick
   var mat = new THREE.MeshPhongMaterial({
-    color:Colors.white,
+    color: Colors.white,
   });
 
   // duplicate the geometry a random number of times

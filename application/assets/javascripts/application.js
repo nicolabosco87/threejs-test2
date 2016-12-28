@@ -24,7 +24,7 @@ function init() {
   createSteve();
   //createPlane();
   //createSea();
-  //createSky();
+  createSky();
 
   //add the listener
   document.addEventListener('mousemove', handleMouseMove, false);

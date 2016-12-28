@@ -4,7 +4,7 @@ Sky = function(){
   this.mesh = new THREE.Object3D();
 
   // choose a number of clouds to be scattered in the sky
-  this.nClouds = 50;
+  this.nClouds = 100;
 
   // To distribute the clouds consistently,
   // we need to place them according to a uniform angle
@@ -17,20 +17,20 @@ Sky = function(){
     // set the rotation and the position of each cloud;
     // for that we use a bit of trigonometry
     var a = stepAngle*i; // this is the final angle of the cloud
-    var h = 750 + Math.random()*200; // this is the distance between the center of the axis and the cloud itself
+    var h = 950 + Math.random()*200; // this is the distance between the center of the axis and the cloud itself
 
     // Trigonometry!!! I hope you remember what you've learned in Math :)
     // in case you don't:
     // we are simply converting polar coordinates (angle, distance) into Cartesian coordinates (x, y)
     c.mesh.position.y = Math.sin(a)*h;
-    c.mesh.position.x = a + Math.PI/2;
+    c.mesh.position.x = 500-Math.random()*1000;
 
     // rotate the cloud according to its position
-    c.mesh.rotation.z = Math.cos(a)*h;
+    c.mesh.rotation.z = a + Math.PI/2;
 
     // for a better result, we position the clouds
     // at random depths inside of the scene
-    c.mesh.position.z = -400-Math.random()*400;
+    c.mesh.position.z = Math.cos(a)*h;
 
     // we also set a random scale for each cloud
     var s = 1+Math.random()*2;

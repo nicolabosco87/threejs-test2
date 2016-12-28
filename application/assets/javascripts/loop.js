@@ -1,7 +1,7 @@
 function loop(){
   // Rotate the propeller, the sea and the sky
   //steve.propeller.rotation.x += 0.3;
-  //sky.mesh.rotation.z += .05;
+  sky.mesh.rotation.x += .05;
   planet.mesh.rotation.x += .05;
 
   // update the plane on each frame

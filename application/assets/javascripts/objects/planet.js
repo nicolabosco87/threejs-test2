@@ -41,7 +41,7 @@ Planet = function(){
   var mat = new THREE.MeshPhongMaterial({
     color: Colors.brownDark,
     transparent:true,
-    opacity:.6,
+    opacity: 1,
     shading:THREE.FlatShading,
   });
 
