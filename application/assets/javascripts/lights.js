@@ -31,12 +31,12 @@ function createLights() {
 
   // to activate the lights, just add them to the scene
   scene.add(hemisphereLight);
-  scene.add(shadowLight);
+  //scene.add(shadowLight);
 
 
 
   // an ambient light modifies the global color of a scene and makes the shadows softer
-  ambientLight = new THREE.AmbientLight(0xdc8874, .5);
+  ambientLight = new THREE.AmbientLight(0xdc8874, .8);
   scene.add(ambientLight);
 
 }

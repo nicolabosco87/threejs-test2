@@ -9,4 +9,13 @@ var Colors = {
 
 };
 
+var manager = new THREE.LoadingManager();
+manager.onProgress = function ( item, loaded, total ) {
+
+  console.log( item, loaded, total );
+
+};
 var loader = new THREE.ObjectLoader();
+
+var objLoader = new THREE.OBJLoader( manager );
+

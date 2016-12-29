@@ -22,9 +22,8 @@ function init() {
   // add the objects
   createPlanet();
   createSteve();
-  //createPlane();
-  //createSea();
   createSky();
+  createFace();
 
   //add the listener
   document.addEventListener('mousemove', handleMouseMove, false);

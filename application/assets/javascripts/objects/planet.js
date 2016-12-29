@@ -65,7 +65,7 @@ function createPlanet(){
   planet = new Planet();
 
   // push it a little bit at the bottom of the scene
-  planet.mesh.position.y = -600;
+  planet.mesh.position.y = -700;
 
   // add the mesh of the planet to the scene
   scene.add(planet.mesh);
