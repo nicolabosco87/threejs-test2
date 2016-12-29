@@ -24,6 +24,7 @@ function init() {
   createSteve();
   createSky();
   createFace();
+  createPaola();
 
   //add the listener
   document.addEventListener('mousemove', handleMouseMove, false);

@@ -12,6 +12,10 @@ function loop(){
     updateFace();
   }
 
+  if (paolaLoaded) {
+    updatePaola();
+  }
+
   //steve.pilot.updateHairs();
 
   //sea.moveWaves();
@@ -87,4 +91,13 @@ function updateFace(){
   // - (Math.PI/2)
 
   //steve.propeller.rotation.x += 0.3;
+}
+
+
+function updatePaola(){
+
+  //face.mesh.rotation.x = -(Math.sin(mousePos.y))/2;
+  paola.mesh.rotation.y+= 0.1;
+  paola.mesh.rotation.z+= 0.05;
+
 }

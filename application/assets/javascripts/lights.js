@@ -31,7 +31,7 @@ function createLights() {
 
   // to activate the lights, just add them to the scene
   scene.add(hemisphereLight);
-  //scene.add(shadowLight);
+  scene.add(shadowLight);
 
 
 

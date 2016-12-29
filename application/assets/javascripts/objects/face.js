@@ -27,6 +27,7 @@ function createFace(){
 
       face.mesh = object;
       face.mesh.position.y = 300;
+      face.mesh.position.x = 400;
       face.mesh.scale.set(800, 800, 800);
       scene.add( face.mesh );
 
