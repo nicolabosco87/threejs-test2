@@ -4,7 +4,7 @@ Sky = function(){
   this.mesh = new THREE.Object3D();
 
   // choose a number of clouds to be scattered in the sky
-  this.nClouds = 100;
+  this.nClouds = 40;
 
   // To distribute the clouds consistently,
   // we need to place them according to a uniform angle
